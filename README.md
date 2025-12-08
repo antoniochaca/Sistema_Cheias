@@ -43,7 +43,12 @@ sistema-alerta-cheias/
 ├── requirements.txt         # Dependências do projeto
 └── README.md                # Documentação
 ```
-🚀 Guia de Instalação e ExecuçãoSiga estes passos para rodar o projeto localmente.1. Clonar o Repositório e Preparar AmbienteBash# Clone este repositório
+## Guia de Instalação e Execução
+
+### 1. Clonar o Repositório e Preparar Ambiente
+
+```bash
+# Clone este repositório
 git clone [https://github.com/SEU-USUARIO/NOME-DO-REPO.git](https://github.com/SEU-USUARIO/NOME-DO-REPO.git)
 
 # Entre na pasta
@@ -51,8 +56,7 @@ cd NOME-DO-REPO
 
 # Instale as dependências necessárias
 pip install -r requirements.txt
-2. Alimentar os Dados (Etapa Crucial)O sistema espera arquivos .csv na pasta 1_Dados_Brutos/.O script busca arquivos contendo os códigos das estações no nome.Códigos configurados:Montante Fluviométrica: 56991500Montante Pluviométrica: 1941008Jusante (Alvo): 56992000Nota: Certifique-se de que os arquivos .csv dentro da pasta 1_Dados_Brutos contenham esses números em seus nomes para que o script os encontre automaticamente.3. Executar o Pipeline de TreinamentoAntes de abrir o app, processe os dados e gere os modelos. Execute o script offline:Bashpython treinamento_offline.py
-O que vai acontecer:O script lerá a pasta 1_Dados_Brutos.Gerará o arquivo dados_completos_limpos.csv na pasta 2_Dados_Processados.Treinará 5 modelos XGBoost e salvará em 3_Modelos_Treinados.Exibirá no terminal a acurácia (R²) e o erro médio (MAE) de cada dia.4. Iniciar o DashboardCom os modelos gerados, inicie a aplicação visual:Bashstreamlit run app.py
-O navegador abrirá automaticamente no endereço http://localhost:8501.📊 Performance do ModeloOs modelos são avaliados utilizando métricas de regressão em dados de teste (separação temporal estrita).HorizonteModeloR² (Acurácia Típica)*D+1 (Amanhã)XGBoost~0.99D+2XGBoost~0.98D+3XGBoost~0.96D+4XGBoost~0.94D+5XGBoost~0.92*Resultados podem variar dependendo do período e qualidade dos dados de entrada.🛠 Tecnologias UtilizadasLinguagem: Python 3.9+Frontend: StreamlitData Science: Pandas, Numpy, Scikit-LearnModelo Preditivo: XGBoost (Gradient Boosting)Visualização: Plotly Interactive GraphsPersistência: Joblib (Model Serialization)
+```
+
 
 
