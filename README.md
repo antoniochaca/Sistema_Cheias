@@ -45,6 +45,8 @@ sistema-alerta-cheias/
 ```
 ## Guia de Instalação e Execução
 
+Siga estes passos para rodar o projeto localmente.
+
 ### 1. Clonar o Repositório e Preparar Ambiente
 
 ```bash
@@ -57,7 +59,7 @@ cd NOME-DO-REPO
 # Instale as dependências necessárias
 pip install -r requirements.txt
 ```
-### Configuração dos Dados
+### 2. Configuração dos Dados
 
 O sistema espera arquivos **`.csv`** localizados na pasta `1_Dados_Brutos/`. O script identifica automaticamente os arquivos procurando pelos códigos das estações no nome do arquivo.
 
@@ -68,4 +70,15 @@ O sistema espera arquivos **`.csv`** localizados na pasta `1_Dados_Brutos/`. O s
 
 >  **Importante:** Certifique-se de que os nomes dos arquivos `.csv` dentro da pasta `1_Dados_Brutos` contenham esses números (ex: `dados_56991500.csv`) para que o script os encontre automaticamente.
 
+### 3. Executar o Pipeline de Treinamento
 
+Antes de abrir o app, processe os dados e gere os modelos. Execute o script offline:
+
+```bash
+python treinamento_offline.py
+```
+**O que vai acontecer:**
+* **O script lerá a pasta 1_Dados_Brutos.**
+* **Gerará o arquivo dados_completos_limpos.csv na pasta 2_Dados_Processados.**
+* **Treinará 5 modelos XGBoost e salvará em 3_Modelos_Treinados.**
+* **Exibirá no terminal a acurácia (R²) e o erro médio (MAE) de cada dia.**
