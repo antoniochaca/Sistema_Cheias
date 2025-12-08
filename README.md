@@ -82,3 +82,12 @@ python treinamento_offline.py
 * **Gerará o arquivo dados_completos_limpos.csv na pasta 2_Dados_Processados.**
 * **Treinará 5 modelos XGBoost e salvará em 3_Modelos_Treinados.**
 * **Exibirá no terminal a acurácia (R²) e o erro médio (MAE) de cada dia.**
+
+### 4. Iniciar o Dashboard
+
+Com os modelos gerados, inicie a aplicação visual:
+
+```bash
+streamlit run app.py
+```
+O navegador abrirá automaticamente no endereço http://localhost:8501.
