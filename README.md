@@ -11,7 +11,7 @@ O modelo é capaz de prever o nível do rio na estação de Jusante com até **5
 
 ---
 
-## 🏗️ Arquitetura do Projeto
+## Arquitetura do Projeto
 
 O sistema é dividido em dois módulos principais que se comunicam através de arquivos serializados:
 
@@ -27,7 +27,7 @@ O sistema é dividido em dois módulos principais que se comunicam através de a
 
 ---
 
-## 📂 Estrutura de Pastas
+## Estrutura de Pastas
 
 Para que o projeto funcione, a estrutura de diretórios deve ser respeitada:
 
@@ -42,3 +42,17 @@ sistema-alerta-cheias/
 ├── treinamento_offline.py   # O Script de Treinamento (Backend/ETL)
 ├── requirements.txt         # Dependências do projeto
 └── README.md                # Documentação
+
+## Guia de Instalação e Execução
+Siga estes passos para rodar o projeto localmente.
+
+1. Clonar o Repositório e Preparar Ambiente
+
+# Clone este repositório
+git clone [https://github.com/SEU-USUARIO/NOME-DO-REPO.git](https://github.com/SEU-USUARIO/NOME-DO-REPO.git)
+
+# Entre na pasta
+cd NOME-DO-REPO
+
+# Instale as dependências necessárias
+pip install -r requirements.txt
