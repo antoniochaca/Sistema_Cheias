@@ -91,3 +91,26 @@ Com os modelos gerados, inicie a aplicação visual:
 streamlit run app.py
 ```
 O navegador abrirá automaticamente no endereço http://localhost:8501.
+
+## Performance do Modelo
+
+Os modelos são avaliados utilizando métricas de regressão em dados de teste (separação temporal estrita).
+
+| Horizonte | Modelo | R² (Acurácia Típica)* |
+| :--- | :--- | :--- |
+| **D+1 (Amanhã)** | XGBoost | ~0.99 |
+| **D+2** | XGBoost | ~0.98 |
+| **D+3** | XGBoost | ~0.96 |
+| **D+4** | XGBoost | ~0.94 |
+| **D+5** | XGBoost | ~0.92 |
+
+*\*Resultados podem variar dependendo do período e qualidade dos dados de entrada.*
+
+## 🛠 Tecnologias Utilizadas
+
+* **Linguagem:** Python 3.9+
+* **Frontend:** Streamlit
+* **Data Science:** Pandas, Numpy, Scikit-Learn
+* **Modelo Preditivo:** XGBoost (Gradient Boosting)
+* **Visualização:** Plotly Interactive Graphs
+* **Persistência:** Joblib (Model Serialization)
