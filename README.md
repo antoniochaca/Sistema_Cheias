@@ -57,6 +57,20 @@ cd NOME-DO-REPO
 # Instale as dependências necessárias
 pip install -r requirements.txt
 ```
+### 2. Alimentar os Dados
 
+O sistema espera arquivos .csv na pasta 1_Dados_Brutos/.
+
+O script busca arquivos contendo os códigos das estações no nome.
+
+Códigos configurados:
+
+Montante Fluviométrica: 56991500
+
+Montante Pluviométrica: 1941008
+
+Jusante (Alvo): 56992000
+
+Nota: Certifique-se de que os arquivos .csv dentro da pasta 1_Dados_Brutos contenham esses números em seus nomes para que o script os encontre automaticamente.
 
 
