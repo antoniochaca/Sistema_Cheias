@@ -106,7 +106,7 @@ Os modelos são avaliados utilizando métricas de regressão em dados de teste (
 
 *\*Resultados podem variar dependendo do período e qualidade dos dados de entrada.*
 
-## 🛠 Tecnologias Utilizadas
+## Tecnologias Utilizadas
 
 * **Linguagem:** Python 3.9+
 * **Frontend:** Streamlit
