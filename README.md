@@ -43,16 +43,3 @@ sistema-alerta-cheias/
 ├── requirements.txt         # Dependências do projeto
 └── README.md                # Documentação
 
-## Guia de Instalação e Execução
-Siga estes passos para rodar o projeto localmente.
-
-1. Clonar o Repositório e Preparar Ambiente
-
-# Clone este repositório
-git clone [https://github.com/SEU-USUARIO/NOME-DO-REPO.git](https://github.com/SEU-USUARIO/NOME-DO-REPO.git)
-
-# Entre na pasta
-cd NOME-DO-REPO
-
-# Instale as dependências necessárias
-pip install -r requirements.txt
