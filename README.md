@@ -42,4 +42,19 @@ sistema-alerta-cheias/
 ├── treinamento_offline.py   # O Script de Treinamento (Backend/ETL)
 ├── requirements.txt         # Dependências do projeto
 └── README.md                # Documentação
+```
+## Guia de Instalação e Execução
+
+# 1. Clonar o Repositório e Preparar Ambiente
+
+``` python
+# Clone este repositório
+git clone [https://github.com/SEU-USUARIO/NOME-DO-REPO.git](https://github.com/SEU-USUARIO/NOME-DO-REPO.git)
+
+# Entre na pasta
+cd NOME-DO-REPO
+
+# Instale as dependências necessárias
+pip install -r requirements.txt
+```
 
