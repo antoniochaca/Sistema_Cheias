@@ -11,6 +11,20 @@ O modelo é capaz de prever o nível do rio na estação de Jusante com até **5
 
 ---
 
+## 📑 Sumário
+
+* [Arquitetura do Projeto](#arquitetura-do-projeto)
+* [Estrutura de Pastas](#estrutura-de-pastas)
+* [Guia de Instalação e Execução](#guia-de-instalação-e-execução)
+  * [1. Clonar o Repositório e Preparar Ambiente](#1-clonar-o-repositório-e-preparar-ambiente)
+  * [2. Configuração dos Dados](#2-configuração-dos-dados)
+  * [3. Executar o Pipeline de Treinamento](#3-executar-o-pipeline-de-treinamento)
+  * [4. Iniciar o Dashboard](#4-iniciar-o-dashboard)
+* [Performance do Modelo](#performance-do-modelo)
+* [Tecnologias Utilizadas](#tecnologias-utilizadas)
+
+---
+
 ## Arquitetura do Projeto
 
 O sistema é dividido em dois módulos principais que se comunicam através de arquivos serializados:
